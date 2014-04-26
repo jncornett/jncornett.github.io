@@ -1,0 +1,35 @@
+doctype html
+html
+	head
+		title jncornett
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", type="text/css", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+
+	body
+		.container
+			.header
+				ul.nav.nav-pills.pull-right
+					li.active: a(href="#") one
+					li: a(href="#") two
+					li: a(href="#") three
+
+				h3.text-muted jncornett
+			.row
+				.col-lg-6
+					h4 RecordParser
+					p#RecordParser
+						a.badge(href="#") source
+						a.badge(href="#") docs
+					h4
+					p
+				.col-lg-6
+					h4
+					p
+					h4
+					p
+			.footer
+
+		script(src="//code.jquery.com/jquery-2.1.0.min.js")
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+		script(src="index.js")
