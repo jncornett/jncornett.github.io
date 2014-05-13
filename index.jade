@@ -8,20 +8,30 @@ html
 
 	body
 		.container
-			.header
-				h3.text-muted jncornett
 			.row
-				.col-lg-6
-					h4 qedit
-					p#qedit
-						a.btn.btn-link(href="") github
+				.col-xs-12
+					h2.text-muted jncornett
+			.row
+				.col-xs-12
+					.col-xs-12
+						h3 qedit
+					.col-xs-2.col-md-1
+						h5.text-muted.pull-right it 
+					.col-xs-10.col-md-11
+						h5: strong is an inline reactive field editor for Bootstrap-3/Meteor. Similar to (but more basic than)  
+							a(href="http://vitalets.github.io/x-editable/"): em x-editable
+					.col-xs-2.col-md-1
+						h5.text-muted.pull-right clone
+					.col-xs-10.col-md-11
+						h5 
+							kbd git clone https://github.com/jncornett/meteor-qedit
+
+					.col-xs-2.col-md-1
+						h5.text-muted.pull-right more
+					.col-xs-10.col-md-11
+						a.btn.btn-link(href="https://github.com/jncornett/meteor-qedit") github
 						a.btn.btn-link(href="/qedit/qedit.html") docs
-				.col-lg-6
-					h4
-					p
-					h4
-					p
-			.footer
+
 
 		script(src="//code.jquery.com/jquery-2.1.0.min.js")
 		script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
