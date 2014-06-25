@@ -10,5 +10,3 @@ if [ -n ~/.bash ]; then
 fi
 
 # Now do stuff that *only* pertains to login shells
-
-#PS1="login-shell $ "
