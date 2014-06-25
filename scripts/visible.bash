@@ -1,5 +1,19 @@
 #!/bin/bash
 
+#                                                                                     
+#           88                       88                                  88           
+#           88                ,d     88                                  88           
+#           88                88     88                                  88           
+#   ,adPPYb,88   ,adPPYba,  MM88MMM  88,dPPYba,   ,adPPYYba,  ,adPPYba,  88,dPPYba,   
+#  a8"    `Y88  a8"     "8a   88     88P'    "8a  ""     `Y8  I8[    ""  88P'    "8a  
+#  8b       88  8b       d8   88     88       d8  ,adPPPPP88   `"Y8ba,   88       88  
+#  "8a,   ,d88  "8a,   ,a8"   88,    88b,   ,a8"  88,    ,88  aa    ]8I  88       88  
+#   `"8bbdP"Y8   `"YbbdP"'    "Y888  8Y"Ybbd8"'   `"8bbdP"Y8  `"YbbdP"'  88       88  
+#                                                                                     
+#                                                                                     
+
+# Source this file in my .bashrc or .bash_profile
+
 # Define colors
 CBLACK=$'\[\033[0;30m\]'
 CGRAY=$'\[\033[1;30m\]'
