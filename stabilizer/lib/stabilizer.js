@@ -119,12 +119,15 @@ $(() => {
   const el = document.getElementById('content');
   const zScale = new Scale(-80, 80);
   const wScale = new Scale(-.5, .5);
+  let acc = new Vec();
   window.ondevicemotion = function(e) {
-    const acc = Vec.fromObject(e.acceleration || e.accelerationIncludingGravity).invert();
+    acc = Vec.fromObject(e.acceleration || e.accelerationIncludingGravity).invert();
     const correction = Vec.lerp(Vec.zero(), acc, watch.split() / 100).scale(25);
     const z = -correction.z;
     const scale = wScale.denorm(zScale.norm(z));
     el.style.transform = `translate(${correction.x}px,${correction.y}px) scale(${scale+1})`;
-    puts(`z: ${scale}`);
   };
+  setInterval(() => {
+    puts(`acceleration: ${acc.toString()}`);
+  }, 1000);
 });
